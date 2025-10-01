@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+    // function greet(name){
+    //     alert("function call happened");
+    //     console.log("Hello"+name);
+    //     return "Hello"+73648346+764783;
+    // }
+    // // alert(greet("Hari"));
+    //  // console.log(greet("Hari"));
+    //  document.write(greet("Hari"));
+
+    //function expression
+    // -->A function cn be stored in a variable
+// const add = function(a,b){
+//     return a+b;
+// };
+// console.log(add(5,3));
+
+//Arrow Function(ES6+)
+//-->shorter syntax for writing functions.
+
+// const multiply=(a,b)=>a*b;
+// console.log(multiply(4,3));
+
+// const square=x=>x*x;
+// console.log(square(5));
+
+// <button id ="btn">click me</button>
+// document.getElementById("btn").addEventListener("click",()=>{
+//     alert("Button was clicked!");
+// });
+
+// setTimeout(()=>{
+//     console.log("Hello after 3 sseconds");
+// },3000);
+
+<!-- <p id="count"></p>
+
+<script>
+    let num = 10;
+    let countdown = setInterval(()=>{
+        document.getElementById("count").innerText=num;
+        num--;
+        if(num<0){
+            clearInterval(countdown);
+            document.getElementById("count").innerText="Time's up!";
+        }
+    },1000); -->
+<!--callback
+A callback is a function passed into another function as an argument and executed later-->
+function greet(name,callback){
+    console.log("Hello"+name);
+    callback();
+}
+function sayBye(){
+    console.log("Goodbye!");
+}
+greet("Viji",sayBye)
+</script>
+</html>
